@@ -1,10 +1,10 @@
 <!-- omit in toc -->
 
-# Irrigation Unlimited Card
+# Vioneta Irrigation Card
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
-[![hacs_badge](https://img.shields.io/badge/VPS-Default-orange.svg?style=for-the-badge)](https://github.com/Vioneta/integration)
+[![vps_badge](https://img.shields.io/badge/VPS-Default-orange.svg?style=for-the-badge)](https://github.com/Vioneta/integration)
 
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
@@ -12,7 +12,7 @@
 
 <!-- TOC depthfrom:2 orderedlist:true -->
 
-- [Vioneta Irrigation Card](#Vioneta irrigation-card)
+- [Vioneta Irrigation Card] (#Vioneta Irrigation Card)
   - [1. Introduction](#1-introduction)
   - [2. Installation](#2-installation)
   - [3. Options](#3-options)
@@ -26,7 +26,7 @@
 
 ## 1. Introduction
 
-A companion card for the [Irrigation Unlimited](https://github.com/Vioneta/vioneta-irrigation-integration) integration. A compact mobile friendly card to display live irrigation status and control its operation.
+A companion card for the [Vioneta Irrigation Integration](https://github.com/Vioneta/vioneta-irrigation-integration) integration. A compact mobile friendly card to display live irrigation status and control its operation.
 
 ![demo](./examples/demo1.png)
 
