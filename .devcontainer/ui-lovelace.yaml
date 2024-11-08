@@ -1,0 +1,7 @@
+resources:
+  - url: http://127.0.0.1:5000/irrigation-unlimited-card.js
+    type: module
+views:
+  - cards:
+      - type: custom:irrigation-unlimited-card
+        name: Irrigation Unlimited Card Development

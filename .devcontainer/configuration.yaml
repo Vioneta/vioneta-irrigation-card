@@ -1,0 +1,59 @@
+default_config:
+lovelace:
+  mode: yaml
+  resources:
+    - url: http://127.0.0.1:5000/irrigation-unlimited-card.js
+      type: module
+demo:
+
+logger:
+  default: info
+  logs:
+    custom_components.irrigation_unlimited: debug
+
+irrigation_unlimited:
+  granularity: 10
+  refresh_interval: 10
+  controllers:
+    - name: "My Garden"
+      all_zones_config:
+        show:
+          timeline: true
+      zones:
+        - name: "Front Lawn"
+        - name: "Vege Patch"
+          zone_id: vegetables
+        - name: "Roses"
+        - name: "Back Yard"
+        - name: "Test"
+      sequences:
+        - name: "Morning"
+          duration: "0:10:00"
+          delay: "0:00:10"
+          schedules:
+            - name: "Sunrise"
+              time:
+                sun: "sunrise"
+          zones:
+            - zone_id: 1
+            - zone_id: vegetables
+            - zone_id: 4
+        - name: "Evening"
+          duration: "0:10:00"
+          delay: "0:00:10"
+          schedules:
+            - name: "Dusk"
+              time:
+                sun: "sunset"
+          zones:
+            - zone_id: 1
+            - zone_id: [vegetables, 3]
+            - zone_id: 4
+        - name: "Never"
+          schedules:
+            - name: "Ever"
+              time: "08:00"
+              month: [feb]
+              day: [30]
+          zones:
+            - zone_id: 5
