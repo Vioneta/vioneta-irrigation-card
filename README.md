@@ -248,7 +248,6 @@ Menu columns
 
 Good luck with your card-modding.
 
-## 6. Support
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/Vioneta/vioneta-irrigation-card?style=for-the-badge
 [commits]: https://github.com/Vioneta/vioneta-irrigation-card/commits/master
